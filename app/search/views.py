@@ -7,9 +7,7 @@ from app.provider import Provider
 from flask import Blueprint, render_template, jsonify, request
 
 from flask_api import status
-from urllib.parse import unquote
 
-import json
 
 # Create a search blueprint
 searchbp = Blueprint("searchbp", __name__)
