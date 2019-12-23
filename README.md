@@ -7,10 +7,10 @@ Add one line description
 Add Screechots
 
 <p align="center">
-	<img alt="Homepage" src="" />
-	<img alt="Search Results" src="" />
-	<img alt="Application Process" src="" />
-	<img alt="Admin Dashboard" src="" />
+	<img alt="Homepage" src="./docs/assets/img/PRVW_homepage.png" />
+	<img alt="Search Results" src="./docs/assets/img/PRVW_search.png" />
+	<img alt="Application Process" src="./docs/assets/img/PRVW_application.png" />
+	<img alt="Admin Dashboard" src="./docs/assets/img/PRVW_admin.png" />
 </p>
 
 Add description
