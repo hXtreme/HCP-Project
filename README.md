@@ -101,26 +101,30 @@ everything is contained in the `app/` folder.
 
 - Install the requirements and setup the development environment.
 
-	```shell script
-	make install 
-	make dev
-	```
+      	```shell script
+      	make install
+      	make dev
+      	```
 
 - Create the database.
 
-	```shell script
-	env GOOGLE_MAPS_API_KEY=key HCP_ADMIN=admin_name HCP_PASS=admin_pass \
-	python manage.py initdb
-	```
+      	```shell script
+      	env GOOGLE_MAPS_API_KEY=key HCP_ADMIN=admin_name HCP_PASS=admin_pass \
+      	python manage.py initdb
+      	```
 
 - Run the application.
 
-	```shell script
-    env HCP_ADMIN=admin_name HCP_PASS=admin_pass \
-    GOOGLE_MAPS_API_KEY=maps-api-key GOOGLE_API_KEY=geocoding-api-key \
-    GOOGLE_APPLICATION_CREDENTIALS=google-client-credential-filepath.json \
-    python manage.py runserver
-    ```
+      	```shell script
+
+  env HCP_ADMIN=admin_name HCP_PASS=admin_pass \
+   GOOGLE_MAPS_API_KEY=maps-api-key GOOGLE_API_KEY=geocoding-api-key \
+   GOOGLE_APPLICATION_CREDENTIALS=google-client-credential-filepath.json \
+   python manage.py runserver
+
+  ```
+
+  ```
 
 - Navigate to `localhost:5000`.
 
