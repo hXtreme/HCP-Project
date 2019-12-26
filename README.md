@@ -4,12 +4,14 @@
 
 Add one line description
 
-Add Screechots
-
 <p align="center">
+	<h3>Landing Page</h3>
 	<img alt="Homepage" src="./docs/assets/img/PRVW_homepage.png" />
+	<h3>Search Results</h3>
 	<img alt="Search Results" src="./docs/assets/img/PRVW_search.png" />
+	<h3>Apply for Credit</h3>
 	<img alt="Application Process" src="./docs/assets/img/PRVW_application.png" />
+	<h3>Admin Dashboard</h3>
 	<img alt="Admin Dashboard" src="./docs/assets/img/PRVW_admin.png" />
 </p>
 
