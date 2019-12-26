@@ -17,32 +17,6 @@ Add one line description
 
 Add description
 
-## Features
-
-- [x] User account sign up, sign in, password reset, all through asynchronous
-      email confirmation.
-- [x] Form generation.
-- [x] Error handling.
-- [x] HTML macros and layout file.
-- [x] "Functional" file structure.
-- [x] Python 3.x compliant.
-- [x] Asynchronous AJAX calls.
-- [ ] Application factory.
-- [x] Administration panel.
-- [ ] Static file bundling, automatic SCSS to CSS conversion and automatic
-      minifying.
-- [ ] Websockets (for example for live chatting)
-- [x] Virtual environment example.
-- [x] Digital Ocean deployment example.
-- [ ] Tests.
-- [x] Logging.
-- [ ] Language selection.
-- [ ] Automatic API views.
-- [ ] API key generator.
-
-If you have any suggestions or want to help, feel free to drop me a line at
-<maxhalford25@gmail.com> or to create an issue.
-
 ## Libraries
 
 ### Backend
