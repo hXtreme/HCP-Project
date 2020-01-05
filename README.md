@@ -130,7 +130,7 @@ This is done in by running `make dev` or `make prod`.
 
 In production you should't include the any API keys in any configuration files, if
 you push to GitHub, people can see and abuse them. You can read more about secret configuration files
-[here](https://exploreflask.com/configuration.html) or alternatively use [GitHub secrets](add URL here)
+[here](https://exploreflask.com/configuration.html) or alternatively use [GitHub secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets).
 
 Read [this](http://flask.pocoo.org/docs/0.10/config/) for information on the
 possible configuration options.
