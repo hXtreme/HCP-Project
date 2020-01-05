@@ -22,17 +22,10 @@ Add description
 ### Backend
 
 - [Flask](http://flask.pocoo.org/), obviously.
-- [Flask-Login](https://flask-login.readthedocs.org/en/latest/) for the user
-  accounts.
 - [Flask-SQLAlchemy](https://pythonhosted.org/Flask-SQLAlchemy/) interacting
   with the database.
 - [Flask-WTF](https://flask-wtf.readthedocs.org/en/latest/) and
   [WTForms](https://wtforms.readthedocs.org/en/latest/) for the form handling.
-- [Flask-Mail](https://pythonhosted.org/Flask-Mail/) for sending mails.
-- [itsdangerous](http://pythonhosted.org/itsdangerous/) for generating random
-  tokens for the confirmation emails.
-- [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/) for generating
-  secret user passwords.
 - [Flask-Admin](https://flask-admin.readthedocs.org/en/latest/) for building an
   administration interface.
 - [Flask-Script](https://flask-script.readthedocs.io/en/latest/) for managing
@@ -58,12 +51,7 @@ everything is contained in the `app/` folder.
 
 - There you have the classic `static/` and `templates/` folders. The
   `templates/` folder contains macros, error views and a common layout.
-- I added a `views/` folder to separate the user and the website logic, which
-  could be extended to the the admin views.
-- The same goes for the `forms/` folder, as the project grows it will be useful
-  to split the WTForms code into separate files.
-- The `models.py` script contains the SQLAlchemy code, for the while it only
-  contains the logic for a `users` table.
+- The `models.py` script contains the SQLAlchemy code for the object corresponding to the folder you find it in.
 - The `toolbox/` folder is a personal choice, in it I keep all the other code
   the application will need.
 - Management commands should be included in `manage.py`. Enter
@@ -140,11 +128,9 @@ called `config.py`. I added a `config_dev.py` and a `config_prod.py` who inherit
 from `config_common.py`. The trick is to symlink either of these to `config.py`.
 This is done in by running `make dev` or `make prod`.
 
-I have included a working Gmail account to confirm user email addresses and
-reset user passwords, although in production you should't include the file if
-you push to GitHub because people can see it. The same goes for API keys, you
-should keep them secret. You can read more about secret configuration files
-[here](https://exploreflask.com/configuration.html).
+In production you should't include the any API keys in any configuration files, if
+you push to GitHub, people can see and abuse them. You can read more about secret configuration files
+[here](https://exploreflask.com/configuration.html) or alternatively use [GitHub secrets](add URL here)
 
 Read [this](http://flask.pocoo.org/docs/0.10/config/) for information on the
 possible configuration options.
